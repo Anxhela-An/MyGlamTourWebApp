@@ -1,0 +1,234 @@
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.paragraph li{
+    font-family: sans-serif;
+    position: relative;
+    top: 120px;
+    left: 600px;
+    color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 5mm;
+    list-style-type:square;
+
+}
+nav{
+   text-align: right;
+   font-size:large;
+}
+
+.logo img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    max-width: 100%;
+}
+.article h4{
+    position: relative;
+    top: 30px;
+    left: 440px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+    font-size: 3.5mm;
+    color:darkcyan;
+}
+.article img{
+    position: relative;
+    float: right;
+    top:-2cm
+}
+.paragraph p{
+    position: relative;
+    top:130px;
+    text-align: center;
+    color:black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:5mm;
+    
+}
+.section h3{
+    position: relative;
+    top: 300px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 4.8mm;
+    left: 30px;
+    color: rgb(105, 23, 2);
+
+}
+.section form{
+    position: relative;
+    top: 310px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5mm;
+    left: 30px;
+    margin: 30px;
+    line-height: 16mm;
+}
+select {
+    font-size: medium;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-family: cursive, sans-serif;
+    outline: 0;
+    background: #ffedea;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgba(248, 161, 0, 0.705);
+    padding: 4px;
+    border-radius: 9px;
+  }
+
+  * {box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: rgb(36, 185, 49);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  opacity: 0.9;
+  position: fixed;
+  top: 6px;
+  right: 10px;
+  width: 110px;
+}
+.open-login {
+  background-color: rgb(118, 221, 86);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  opacity: 0.9;
+  position: fixed;
+  top: 6px;
+  right: 130px;
+  width: 110px;
+}
+
+
+/* The popup form - hidden by default */
+.profile-popup {
+  display: none;
+  position: fixed;
+  top: 48px;
+  right: -6px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+.login-popup {
+  display: none;
+  position: fixed;
+  top: 48px;
+  right: 100px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+.login-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Add styles to the form container */
+.profile-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.profile-container input[type=text], .profile-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+.login-container input[type=text], .login-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.profile-container input[type=text]:focus, .profile-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.login-container input[type=text]:focus, .login-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.profile-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.profile-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.profile-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+.login-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.login-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.login-container .btn:hover, .login-button:hover {
+  opacity: 1;}
+.error {
+
+  background: #F2DEDE;
+
+  color: #0c0101;
+
+  padding: 10px;
+
+  width: 95%;
+
+  border-radius: 5px;
+
+  margin: 20px auto;
+
+}
+.end{position: absolute;
+    top:130%;
+    left: 20px
+
+}
+
+footer{
+    position: absolute;
+    top:130%;
+    left:700px;
+}
+

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="CSSElements/stylehotels.css" />
+    <title>Book the most approprite hotel for you</title>
+  </head>
+  <body>
+    <a href="content.html">Return back to the main page</a>
+    <h2>Filter out by places and get the best offers of the moment!</h2>
+
+    <h3>Select the place from the dropdown button below:</h3>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+      <div id="myDropdown" class="dropdown-content">
+        <input
+          type="text"
+          placeholder="Search city.."
+          id="myInput"
+          onkeyup="filterFunction()"
+        />
+        <a href="#amsterdam"
+          ><a
+            href="https://www.booking.com/city/nl/amsterdam.nl.html?aid=303947;label=amsterdam-6RuyzUVJCuHob7uY*O6zrQS392420729455%3Apl%3Ata%3Ap11340%3Ap2%E2%82%AC12%3Aac%3Aap%3Aneg%3Afi%3Atikwd-15722340%3Alp9069992%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YYnX0UuDUyu9wIL-GMhz1Ok;ws=;gclid=CjwKCAjwpKyYBhB7EiwAU2Hn2Q_0ObWOf8K4HQ9LapjZd91CMhPmIMz7iRf5fcuCC3d6P6RiltKosBoC_R4QAvD_BwE"
+            target="_blank"
+            >Amsterdam</a
+          ></a
+        >
+        <a href="#athens"
+          ><a
+            href="https://www.ihg.com/hotels/gb/en/find-hotels/hotel/list?fromRedirect=true&qSrt=sAV&qIta=99603206&icdv=99603206&qDest=Athens,%20Greece&setPMCookies=true&qRad=10&qRdU=1&gclid=CjwKCAjwpKyYBhB7EiwAU2Hn2YAga-2q0GGzXubqc1nY0aN2tTlQc52MKBq7tMIGC4vJP-LNsmwcmhoCAuUQAvD_BwE&cm_mmc=PDSEA-_-G_F-EUR_FS-EUR_H-EUR_HS-GRC_IHG_NBI_N-RLSA_L-GBR_CITY-ATHENS&srb_u=1"
+            target="_blank"
+            >Athens</a
+          ></a
+        >
+        <a href="#barcelona"
+          ><a
+            href="https://www.booking.com/city/es/barcelona.html?aid=303948;label=barcelona-uwOWMfBH_Qjc5*1sn8nYtgS392876322157:pl:ta:p12300:p2:ac:ap:neg:fi:tikwd-14453901:lp9069992:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9Yf5EcukO1MOGLSSAuId8ToA;ws=&gclid=CjwKCAjwpKyYBhB7EiwAU2Hn2UclJGUH2tRhiNbLhYHHfnD8Uc-N0G3T38zC0dlCGi5qlKfTx_RVKRoCQYYQAvD_BwE"
+            target="_blank"
+            >Barcelona</a
+          ></a
+        >
+        <a href="#berlin"
+          ><a
+            href="vhttps://www.booking.com/city/de/berlin.de.html?aid=301584;label=berlin-ciZRGf68cZjUefnAoHoTogS553317234401:pl:ta:p1960:p2%E2%82%AC10:ac:ap:neg:fi:tikwd-14478501:lp9069992:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9YUNMGHk8cZwooeZEiCfXj4k;ws=&gclid=CjwKCAjwpKyYBhB7EiwAU2Hn2fR1DKLIsEojRqzqOmn3DcVkZRQmFtuZBNo9or79tbtGAsYOsggwwBoCaD8QAvD_BwE"
+            target="_blank"
+            >Berlin</a
+          ></a
+        >
+        <a href="#dublin"
+          ><a
+            href="https://www.booking.com/city/ie/dublin.html?aid=1610684;label=dublin-fSClBoeaPkn5HKHiqbClGgS378926925986:pl:ta:p1:p2:ac:ap:neg:fi:tikwd-345994737508:lp9069992:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9YfqnDqqG8nt10AsofPfvtt0;ws=&gclid=CjwKCAjwpKyYBhB7EiwAU2Hn2Y08QB9dza3PGe3rIOuwAIGZPasd9E_y6lWiIMnQ70hHOBZkPttfrBoCUHwQAvD_BwE"
+            target="_blank"
+            >Dublin</a
+          ></a
+        >
+        <a href="#istanbul"
+          ><a
+            href="https://www.kayak.com/Istanbul-Hotels.3430.hotel.ksp?r9ck=iq&gclid=CjwKCAjwpKyYBhB7EiwAU2Hn2XWLeEnJBgaHpi4nX7kxjUBWSSaXMr1D6mpbsBhClEJjVYOZhRuxIhoC9LMQAvD_BwE"
+            target="_blank"
+            >Istanbul</a
+          ></a
+        >
+        <a href="#london"
+          ><a
+            href="https://www.booking.com/city/gb/london.html?aid=303948;label=london-sqUZdG0jd*ITtRqQ7iZfAgS392743199744:pl:ta:p13060:p2:ac:ap:neg:fi:tikwd-14476741:lp9069992:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9Yf5EcukO1MOGLSSAuId8ToA;ws=&gclid=CjwKCAjwpKyYBhB7EiwAU2Hn2f-WwHHgCnz6yUUIiC8y_lU7Kl6KrrtrvFMSjGJlfBeCBKmm3dowUBoCMUQQAvD_BwE"
+            target="_blank"
+            >London</a
+          ></a
+        >
+        <a href="#madrid"
+          ><a
+            href="https://www.booking.com/city/es/madrid.es.html?aid=303946;label=madrid-_IBHloc*wIyhLP1FLZAiygS392407086432:pl:ta:p11660:p2:ac:ap:neg:fi:tikwd-4866649523:lp9069992:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9Ye7BFAsTyVd6olzyFZA51Co;ws=&gclid=CjwKCAjwpKyYBhB7EiwAU2Hn2bGr54FU2eNO7bjrjjEHEwJjRYnbBuX5dc6gRxBVPSJwI3ZDceEziBoC-mUQAvD_BwE"
+            target="_blank"
+            >Madrid</a
+          ></a
+        >
+        <a href="#milan"
+          ><a
+            href="https://www.booking.com/city/it/milan.html?aid=303948;label=milan-eSJNUt*Y_HqyXDinAeWbwQS392850261534:pl:ta:p11960:p2:ac:ap:neg:fi:tikwd-293889771:lp9069992:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9Yf5EcukO1MOGLSSAuId8ToA;ws=&gclid=CjwKCAjwpKyYBhB7EiwAU2Hn2XqBfBcf9zbR-sfwINyRJS6kVQBLBQJOqN1-qvJPae6hxzpDRBTH4xoCLewQAvD_BwE"
+            target="_blank"
+            >Milan</a
+          ></a
+        >
+        <a href="#moscow"
+          ><a
+            href="https://www.booking.com/luxury/city/us/moscow.en-gb.html?aid=1135786&label=moscow-hasDdGkgGSUYuMwC2tW2%2FwS189626724940%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-10270084831%3Alp9069992%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YcpDr58xwogAfuBu-XwhWKk&sid=f7dd063aa68a7683448032c50441edf1&keep_landing=1&gclid=CjwKCAjwpKyYBhB7EiwAU2Hn2SkUXaw7rww39CvpRW-WzHV3tRt9s_gaQMBZPGsYG8K1pbMv7PiEZBoCgBoQAvD_BwE&"
+            target="_blank"
+            >Moscow</a
+          ></a
+        >
+        <a href="#nice"
+          ><a
+            href="https://www.booking.com/city/fr/nice.html?aid=303948;label=nice-G51jx0jMSUY*gmsaid*KJgS392743199723:pl:ta:p11140:p2:ac:ap:neg:fi:tikwd-293891391:lp9069992:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9Yf5EcukO1MOGLSSAuId8ToA;ws=&gclid=CjwKCAjwpKyYBhB7EiwAU2Hn2RzzM1oVNpfz-MksSFf5UdaRBxjZH1vDxmFN6P4oOqaKuqK6vgEIhhoCHX8QAvD_BwE"
+            target="_blank"
+            >Nice</a
+          ></a
+        >
+        <a href="#paris"
+          ><a
+            href="https://www.booking.com/city/fr/paris.html?aid=303948;label=paris-t0hm2jyOhd0wgOarCrfFigS392876322142:pl:ta:p14260:p2:ac:ap:neg:fi:tikwd-12080541:lp9069992:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9Yf5EcukO1MOGLSSAuId8ToA;ws=&gclid=CjwKCAjwpKyYBhB7EiwAU2Hn2TjyDjkxzKSiu72xh3uARg9w6ByiRYf8F9NUHVvdTqwSHUfFaC9A3hoCWi4QAvD_BwE"
+            target="_blank"
+            >Paris</a
+          ></a
+        >
+        <a href="#prague"
+          ><a
+            href="https://www.booking.com/city/cz/prague.html?aid=303948;label=prague-asglFbQqP*Ii2AOsZyXvIwS392850261594:pl:ta:p12280:p2:ac:ap:neg:fi:tikwd-293874231:lp9069992:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9Yf5EcukO1MOGLSSAuId8ToA;ws=&gclid=CjwKCAjwpKyYBhB7EiwAU2Hn2e4NBohMDWDU9bBP9OXNPYB2GxDgPbJZcDijXrTGS9ZB43gKVHxtMxoChjQQAvD_BwE"
+            target="_blank"
+            >Prague</a
+          ></a
+        >
+        <a href="#rome"
+          ><a
+            href="https://www.nh-hotels.com/hotels/rome?campid=8435708&gclid=CjwKCAjwpKyYBhB7EiwAU2Hn2RXkUneAatKnaWgx0GaMVVkUTXHpjU4piOS-SL4Fhpt18pMJWL0NWBoCiCQQAvD_BwE&gclsrc=aw.ds"
+            target="_blank"
+            >Rome</a
+          ></a
+        >
+        <a href="#tirana"
+          ><a
+            href="https://www.booking.com/city/al/tirana.en.html?aid=303948;label=tirana-_zc0EiA8PYlroaJByKzLVAS392989378965:pl:ta:p1200:p2:ac:ap:neg:fi:tikwd-435604154:lp9069992:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9Yf5EcukO1MOGLSSAuId8ToA;ws=&gclid=CjwKCAjwpKyYBhB7EiwAU2Hn2e95cjHn2_HghvY2Jvb7B-LJVpwqP6BsgL4MGKWgSIC0cFLtuEoC2RoCe-IQAvD_BwE"
+            target="_blank"
+            >Tirana</a
+          ></a
+        >
+        <a href="#venice"
+          ><a
+            href="https://www.nh-hotels.com/hotels/venice?campid=8435708&gclid=CjwKCAjwpKyYBhB7EiwAU2Hn2XWVJw7hivfksq0JZ8SBxmFKyjfHvcCQJtOxq-Q8gv3RdwNx2E3JWBoCVJsQAvD_BwE&gclsrc=aw.ds"
+            target="_blank"
+            >Venice</a
+          ></a
+        >
+        <a href="#vienna"
+          ><a
+            href="https://www.booking.com/city/at/vienna.html?aid=303948;label=vienna-MotiagThkrYZxpms*ou0rgS392876322145:pl:ta:p11260:p2:ac:ap:neg:fi:tikwd-430596291:lp9069992:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9Yf5EcukO1MOGLSSAuId8ToA;ws=&gclid=CjwKCAjwpKyYBhB7EiwAU2Hn2Q3caYQ2Y7HMcaF4W2GIrDG-0l00bYxq4d9bM0-PRYFoDZoiH4w4WBoCISIQAvD_BwE"
+            target="_blank"
+            >Vienna</a
+          ></a
+        >
+        <a href="#warsaw"
+          ><a
+            href="https://www.booking.com/city/pl/warsaw.html?aid=303948;label=warsaw-UkUFlhaN4UEiBrwbXIvYKQS392743199657:pl:ta:p11260:p2:ac:ap:neg:fi:tikwd-2074415031:lp9069992:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9Yf5EcukO1MOGLSSAuId8ToA;ws=&gclid=CjwKCAjwpKyYBhB7EiwAU2Hn2aHCpWeJjK__oMTM4ZU7BGpWr5VwsOf4-vyGz5fHBkYvx9Yy2fwhpRoCt1EQAvD_BwE"
+            target="_blank"
+            >Warsaw</a
+          ></a
+        >
+      </div>
+    </div>
+    <div class="img1">
+      <img
+        src="HTML-Elements/cheapesthotels.webp"
+        alt="Cheapest hotels in 2022"
+        width="460px"
+      />
+      <div class="a1">
+        <a
+          href="https://www.cntraveller.com/gallery/affordable-hotels-in-europe"
+          >The most affordable hotels in Europe for 2022 | CN Traveller</a
+        >
+      </div>
+    </div>
+    <div class="img2">
+      <img
+        src="HTML-Elements/besthotels.jpg"
+        alt="Best hotels in Europe"
+        width="480px"
+      />
+      <div class="a2">
+        <a href="https://www.telegraph.co.uk/travel/destinations/europe/hotels/"
+          >The best hotels in Europe for this year</a
+        >
+      </div>
+    </div>
+    <div class="img3">
+      <img
+        src="HTML-Elements/guesthouses.jpg"
+        alt="Guest house in Europe"
+        width="465px"
+      />
+      <div class="a3">
+        <a
+          href="https://www.expedia.com/Europe-Guest-Houses.d6022967-aaGuestHouses.Travel-Guide-Accommodation"
+          >Top Guest houses in Europe</a
+        >
+      </div>
+    </div>
+    <div class="img4">
+      <img
+        src="HTML-Elements/smallhotels.jpg"
+        alt="Small and luxury hotels in Europe"
+        width="480px"
+      />
+      <div class="a4">
+        <a href="https://www.i-escape.com/europe/boutique-hotels"
+          >Top small and luxury hotels in Europe</a
+        >
+      </div>
+    </div>
+    <script>
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      function filterFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        div = document.getElementById("myDropdown");
+        a = div.getElementsByTagName("a");
+        for (i = 0; i < a.length; i++) {
+          txtValue = a[i].textContent || a[i].innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+          } else {
+            a[i].style.display = "none";
+          }
+        }
+      }
+    </script>
+    <footer>All rights reserved to &copy;2022 GlamTour</footer>
+  </body>
+</html>

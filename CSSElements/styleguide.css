@@ -1,0 +1,36 @@
+h2{
+    position: absolute;
+    left:205px;
+    color:rgb(131, 159, 211);
+
+}
+.img1{
+    position: absolute;
+    left: 2cm;
+    top:3.8cm;
+  }
+  .a1{
+    position: absolute;
+    left: 5cm;
+    top:11.3cm;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.img2{
+    position: absolute;
+    left: 22cm;
+    top:3.8cm;
+  }
+  .a2{
+    position: absolute;
+    left: 4cm;
+    top:11.3cm;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+footer {
+    clear: both;
+    position: relative;
+    height: 80px;
+    margin-top: 700px;
+    text-align: center;
+}

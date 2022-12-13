@@ -1,0 +1,125 @@
+h2{
+    text-align: center;
+    color:rgb(21, 199, 21)
+}
+h3{
+    color: rgb(5, 12, 5);
+    position: relative;
+    left: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.a1{
+    position: absolute;
+    left: 0cm;
+    top:7.3cm;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.a2{
+  position: absolute;
+    left: 2.5cm;
+    top:7.3cm;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.a3{
+  position: absolute;
+    left: 3cm;
+    top:9.2cm;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.a4{
+  position: absolute;
+    left: 2.7cm;
+    top:8.8cm;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+  .img1{
+    position: absolute;
+    left: 10cm;
+    top:3.8cm;
+  }
+  .img2{
+    position: absolute;
+    left: 26cm;
+    top: 3.8cm;
+  }
+  .img3{
+    position: absolute;
+    left: 10cm;
+    top: 12.8cm;
+  }
+  .img4{
+    position: absolute;
+    left: 26cm;
+    top: 12.8cm;
+  }
+
+  .dropbtn {
+    background-color: #ffdf86;
+    color: rgb(0, 0, 0);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    left: 40px;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #ffdf86;
+  }
+  
+  /* The search field */
+  #myInput {
+    box-sizing: border-box;
+    background-image: url('searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* The search field when it gets focus/clicked on */
+  #myInput:focus {outline: 3px solid #ddd;}
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    border: 1px solid #ddd;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;} 
+
+  footer {
+    clear: both;
+    position: relative;
+    height: 80px;
+    margin-top: 700px;
+    text-align: center;
+}
