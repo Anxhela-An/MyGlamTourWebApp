@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+    <link rel="stylesheet" href="CSSElements/style.css" />
+    <title>GlamTour website</title>
+  </head>
+  <body
+    style="
+      background-image: url('HTML-Elements/newlogo\ \(2\).jpg');
+      background-repeat: no-repeat;
+      background-size: 100% 70%;
+      overflow-x: hidden;
+    "
+  >
+    <header>
+      <nav>
+        <button class="open-button" onclick="openProfile()">
+         Sign up</a>
+        </button>
+        <div class="profile-popup" id="myProfile">
+          <form action="PHPFiles/signup.php " class="profile-container" method="post">
+            <h1>Sign up</h1>
+
+           
+            <label for="email"><b>Email</b></label>
+            <input
+              type="text"
+              placeholder="email@domain.com"
+              name="email"
+              required
+            />
+            <label for="username"><b>Username</b></label>
+            <input
+              type="text"
+              placeholder="username"
+              name="username"
+              required
+            />
+
+            <label for="psw"><b>Password</b></label>
+            <input
+              type="password"
+              placeholder="Enter password"
+              name="psw"
+              required
+            />
+            <label for="confirmpsw"><b>Confirm password</b></label>
+            <input
+              type="password"
+              placeholder="Retype your password"
+              name="confirmpsw"
+              required
+            />
+
+
+            <button type="submit" name= "signup" class="btn">Sign up</button>
+            <button type="button" class="btn cancel" onclick="closeProfile()">
+              Close
+            </button>
+            <p>Already have an account? Click login to use your account</p>
+
+          </form>
+        </div>
+
+                                 <!---->
+        <button class="open-login" onclick="openLogin()">
+            Login</a>
+           </button>
+           <div class="login-popup" id="myLogin">
+             <form action="PHPFiles/login.php " class="login-container" method="post">
+               <h1>Login</h1>
+   
+              
+               <label for="email"><b>Email</b></label>
+               <input
+                 type="text"
+                 placeholder="email@domain.com"
+                 name="email"
+                 required
+               />
+   
+               <label for="psw"><b>Password</b></label>
+               <input
+                 type="password"
+                 placeholder="Enter password"
+                 name="psw"
+                 required
+               />   
+               <button type="submit" name= "login" class="btn">Login</button>
+               <button type="button" class="btn cancel" onclick="closeLogin()">
+                 Close
+               </button>
+               <p>Are you new here? Click Sign up to register</p>
+   
+             </form>
+           
+        <script>
+          function openProfile() {
+            document.getElementById("myProfile").style.display = "block";
+          }
+
+          function closeProfile() {
+            document.getElementById("myProfile").style.display = "none";
+          }
+          function openLogin() {
+            document.getElementById("myLogin").style.display = "block";
+          }
+
+          function closeLogin() {
+            document.getElementById("myLogin").style.display = "none";
+          }
+        </script>
+      </nav>
+      <div class="logo">
+        <h1>GlamTour - <em>fly into your dreams</em></h1>
+      </div>
+    </header>
+    <article>
+      <div class="article">
+        <h4>
+          Have you planned to take some <strong>holidays</strong> but you don't
+          know where to go? &nbsp;Hmmm...the prices seem too high? <br />That's
+          true, we have thought about the travel agencies and guides as well!!
+        </h4>
+      </div>
+      <div class="paragraph">
+        <p>Have a look and get the best deal for your upcoming holiday!</p>
+        <br />
+        <ul>
+          <li>
+            <a
+              href="destinations.html"
+              target="_blank"
+              style="background-color: rgb(255, 173, 204)"
+              >Choose your favourite destination</a
+            >
+          </li>
+          <br />
+          <li>
+            <a
+              href="hotels.html"
+              target="_blank"
+              style="background-color: rgb(189, 250, 162)"
+              >Explore the hotels which fit your type</a
+            >
+          </li>
+          <br />
+          <li>
+            <a
+              href="guides-and-assisrance.html"
+              target="_blank"
+              style="background-color: rgb(241, 255, 147)"
+              >Guides and assistance</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="article">
+        <img
+          src="HTML-Elements/beach3.webp"
+          alt="Girl on the sand"
+          width="400"
+        />
+      </div>
+    </article>
+    <section>
+      <div class="section">
+        <h3>
+          Are you interested to know about the average cost of travelling in a specific place? <br/><br/> <div style="font-size:medium ; font-family:Verdana, Geneva, Tahoma, sans-serif;">Fill out the fields below and we will help you out with this.</div>
+        </h3>
+        <form>
+          <label for="city">Choose the destination city: </label>
+          <select name="cities" id="cit">
+            <option value="select">Cities</option>
+            <option value="London">London, UK</option>
+            <option value="Rome">Rome, Italy</option>
+            <option value="Barcelona">Barcelona, Spain</option>
+            <option value="Amsterdam">Amsterdam, Netherlands</option>
+            <option value="Paris">Paris, France</option>
+            <option value="Tirana">Tirana, Albania</option>
+            <option value="Prague">Prague, Czech Republic</option>
+            <option value="Milan">Milan, Italy</option>
+            <option value="Athens">Athens, Greece</option>
+            <option value="Moscow">Moscow, Russia</option>
+            <option value="Venice">Venice, Italy</option>
+            <option value="Madrid">Madrid, Spain</option>
+          </select>
+          <br />
+          <label for="hotel">Select the hotel standard: </label>
+          <select name="hotels" id="ht">
+            <option value="select">Hotel</option>
+            <option value="3">3 stars hotel</option>
+            <option value="4">4 stars hotel</option>
+            <option value="5">5 stars hotel</option>
+            <option value="gt">guest house</option>
+            <option value="sa">shared appartment/house</option>
+            <option value="ph">private house</option>
+          </select>
+          <br />
+          <label for="guide">Guide/No guide: </label>
+          <select name="guide" id="gd">
+            <option value="select">Guide</option>
+            <option value="y">Yes</option>
+            <option value="p">Partially</option>
+            <option value="n">Not really</option></select
+          ><br />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </section>
+    <div class="end">
+      <strong>Reach out to us using the following:</strong> &nbsp; Phone number:
+      +355698700300 or E-mail address: glamtour@gmail.com
+    </div>
+    <footer><br /><br />All rights reserved to &copy;2022 GlamTour</footer>
+  </body>
+</html>

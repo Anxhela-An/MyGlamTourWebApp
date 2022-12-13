@@ -1,0 +1,32 @@
+h2 {
+    background-color: rgb(250, 248, 126);
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h4{
+  text-align: left;
+  font-family: 'Times New Roman', Times, serif;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px ;
+  }
+
+  .column {
+    flex: 50%;
+    padding: 0 4px;
+  }
+  .column img {
+    margin-top: 8px;
+    margin-block: 15px;
+    margin-left: 28px;
+    vertical-align: middle;
+  }
+footer {
+    clear: both;
+    position: relative;
+    height: 30px;
+    margin-top: 80px;
+    text-align: center;
+}
